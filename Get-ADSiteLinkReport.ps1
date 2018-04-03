@@ -8,7 +8,7 @@ function Get-ADSiteLinkReport {
 
 .PARAMETER
     -Domain The fully qualified domain name of the domain you are querying.
-    -CSV
+    -CSV    Adding this switch outputs the results to a csv file.
 
 .EXAMPLE
     Get-ADSiteLinkReport -Domain testdomain.local
