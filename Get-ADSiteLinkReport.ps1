@@ -47,7 +47,7 @@ $SiteLinks = @()
 
 Try {
 
-    IF (-not (Get-Module -Name ActiveDirectory)) {Import-Module -Name ActiveDirectory -ErrorAction Stop -ErrorVariable $ErrImpADModule}
+    IF (!(Get-Module -ListAvailable -Name ActiveDirectory)) {Import-Module -Name ActiveDirectory -ErrorAction Stop -ErrorVariable ErrImpADModule}
 
     }
 
